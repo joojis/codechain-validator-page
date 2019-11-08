@@ -8,9 +8,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Header from "./header"
 import "./layout.css"
+
+const Mailto = styled.a`
+  font-family: Lato;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555555;
+  text-decoration: none;
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,10 +44,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer style={{ textAlign: "right" }}>
+          <Mailto href="mailto:jjg@codechain.io">Contact</Mailto>
         </footer>
       </div>
     </>
