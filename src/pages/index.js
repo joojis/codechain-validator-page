@@ -8,6 +8,7 @@ import Validator from "../components/validator"
 const IndexPage = () => (
   <Layout>
     <SEO title="jNode the CodeChain validator service" />
+    <div style={{ height: 100 }}></div>
     <Validator />
     <div style={{ height: 200 }}></div>
     <Profile />
