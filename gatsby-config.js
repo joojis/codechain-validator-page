@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `jNode - CodeChain Validator Service`,
+    description: `Delegate your CCS to jNode which is operated by a core developer of CodeChain.`,
+    author: `@joojis`,
   },
   pathPrefix: "/codechain-validator-page",
   plugins: [
