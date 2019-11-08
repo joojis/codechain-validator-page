@@ -4,8 +4,8 @@ import styled from "styled-components"
 import Image from "./image"
 
 const ImageWrapper = styled.div`
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
 `
 
 const Lato = styled.div`
@@ -43,11 +43,22 @@ const TwitterLink = styled.a`
   text-decoration: none;
 `
 
+const MediumLink = styled.a`
+  &:hover {
+    color: #333;
+  }
+  color: black;
+  font-family: serif;
+  font-weight: bold;
+  text-decoration: none;
+`
+
 const Profile = () => {
   const name = "JinGyeong Jeong"
   const description = "JinGyeong Jeong is a core developer of CodeChain"
   const githubLink = "https://github.com/joojis/"
   const twitterLink = "https://twitter.com/jjgjoojis"
+  const mediumLink = "https://medium.com/@jjgjoojis"
   return (
     <RowSpaceBetween>
       <Lato>
@@ -58,6 +69,8 @@ const Profile = () => {
         <GitHubLink href={githubLink}>GitHub</GitHubLink>
         <br />
         <TwitterLink href={twitterLink}>Twitter</TwitterLink>
+        <br />
+        <MediumLink href={mediumLink}>Medium</MediumLink>
       </Lato>
       <ImageWrapper>
         <Image />
